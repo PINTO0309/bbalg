@@ -40,9 +40,9 @@ def state_verdict(
         raise ValueError('short_tracking_history.maxlen is None. Set long_tracking_history.maxlen to the maximum number of histories indicating N histories.')
 
     if len(long_tracking_history) < n:
-        raise ValueError('long_tracking_history is not enough. Set long_tracking_history to the maximum number of histories indicating N histories.')
+        return False, False, False
     if len(short_tracking_history) < m:
-        raise ValueError('short_tracking_history is not enough. Set short_tracking_history to the maximum number of histories indicating M histories.')
+        return False, False, False
 
     # 1. State-in-Progress (whether or not the state is currently in progress, true for as long as the state lasts)
     # The sum of N histories is greater than or equal to N/2 and the sum of the last M histories is greater than or equal to M-1
