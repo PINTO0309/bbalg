@@ -1,6 +1,10 @@
 # bbalg
 Baba algorithm for robustly determining status changes of objects to be tracked.
 
+```
+pip install -U bbalg
+```
+
 ```python
 state_verdict(
   long_tracking_history: Deque[bool],
