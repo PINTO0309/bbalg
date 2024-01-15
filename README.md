@@ -19,7 +19,7 @@ state_verdict(
     ----------
     long_tracking_history: List[bool]
         History of N cases. Each element represents the past N state judgment results.
-        e.g. N=10, [False, True, False, True, True, True, True, True, True, False]
+        e.g. N=10, [False, False, False, True, False, True, True, True, False, True]
     
     short_tracking_history: List[bool]
         History of M cases. Each element represents the past M state judgment results.
@@ -55,7 +55,7 @@ state_interval_judgment, state_start_judgment, state_end_judgment = \
         long_tracking_history=\
           Deque([False, True, False, True, False, True, True, True, True, False], maxlen=10),
         short_tracking_history=\
-          Deque([True, True, True, False], maxlen=4),
+          Deque([True, True, False, True], maxlen=4),
     )
 print(f'state_interval_judgment: {state_interval_judgment}')
 print(f'state_start_judgment: {state_start_judgment}')
