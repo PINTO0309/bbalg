@@ -37,7 +37,7 @@ def state_verdict(
     if n is None:
         raise ValueError('long_tracking_history.maxlen is None. Set long_tracking_history.maxlen to the maximum number of histories indicating N histories.')
     if m is None:
-        raise ValueError('short_tracking_history.maxlen is None. Set long_tracking_history.maxlen to the maximum number of histories indicating N histories.')
+        raise ValueError('short_tracking_history.maxlen is None. Set long_tracking_history.maxlen to the maximum number of histories indicating M histories.')
 
     if len(long_tracking_history) < n:
         return False, False, False
