@@ -55,7 +55,7 @@ state_interval_judgment, state_start_judgment, state_end_judgment = \
         long_tracking_history=\
           Deque([False, True, False, True, False, True, True, True, True, False], maxlen=10),
         short_tracking_history=\
-          Deque([True, True, False, True], maxlen=4),
+          Deque([True, True, True, False], maxlen=4),
     )
 print(f'state_interval_judgment: {state_interval_judgment}')
 print(f'state_start_judgment: {state_start_judgment}')
