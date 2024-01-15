@@ -12,7 +12,7 @@ def state_verdict(
     ----------
     long_tracking_history: List[bool]\n
         History of N cases. Each element represents the past N state judgment results.\n
-        e.g. N=10, [False, True, False, True, True, True, True, True, True, False]\n
+        e.g. N=10, [False, False, False, True, False, True, True, True, False, True]\n
     short_tracking_history: List[bool]\n
         History of M cases. Each element represents the past M state judgment results.\n
         e.g. M=4, [True, True, False, True]
