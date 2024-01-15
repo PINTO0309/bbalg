@@ -1,4 +1,6 @@
 # bbalg
+[![Downloads](https://static.pepy.tech/personalized-badge/bbalg?period=total&units=none&left_color=grey&right_color=brightgreen&left_text=Downloads)](https://pepy.tech/project/bbalg) ![GitHub](https://img.shields.io/github/license/PINTO0309/bbalg?color=2BAF2B) [![Python](https://img.shields.io/badge/Python-3.10-2BAF2B)](https://img.shields.io/badge/Python-3.8-2BAF2B) [![PyPI](https://img.shields.io/pypi/v/bbalg?color=2BAF2B)](https://pypi.org/project/bbalg/)
+
 Baba algorithm for robustly determining status changes of objects to be tracked.
 
 ```
