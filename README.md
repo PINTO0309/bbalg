@@ -38,7 +38,8 @@ state_verdict(
 ```
 ### 1. State-in-Progress (whether or not the state is currently in progress, true for as long as the state lasts)
 
-The sum of N histories is greater than or equal to N/2 and the sum of the last M histories is greater than or equal to M-1
+The sum of `N` histories is greater than or equal to `N/2` and the sum of the last `M` histories is greater than or equal to `M-1`
+
 ```python
 from typing import Deque
 from bbalg import state_verdict
@@ -61,7 +62,8 @@ state_end_judgment: False
 ```
 ### 2. State start judgment (whether the state has now been entered or not, it becomes true only at the moment of change)
 
-Total of N histories = N/2 and the sum of the last M histories is greater than or equal to M-1
+Total of `N` histories = `N/2` and the sum of the last `M` histories is greater than or equal to `M-1`
+
 ```python
 from typing import Deque
 from bbalg import state_verdict
@@ -84,7 +86,8 @@ state_end_judgment: False
 ```
 ### 3. State end judgment (whether the state has just ended or not, it becomes true only at the moment it ends)
 
-Sum of N histories = N/2 and the sum of the last M histories is less than or equal to 1
+Sum of `N` histories = `N/2` and the sum of the last `M` histories is less than or equal to `1`
+
 ```python
 from typing import Deque
 from bbalg import state_verdict
