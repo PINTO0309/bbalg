@@ -58,11 +58,11 @@ def state_verdict(
 
 if __name__ == '__main__':
     print(f'long_tracking_history = Deque([False, True, False, True, True, True, True, True, True, False], maxlen=10)')
-    print(f'short_tracking_history = Deque([True, True, False, True], maxlen=4)')
+    print(f'short_tracking_history = Deque([True, True, True, False], maxlen=4)')
     state_interval_judgment, state_start_judgment, state_end_judgment = \
         state_verdict(
             long_tracking_history=Deque([False, True, False, True, True, True, True, True, True, False], maxlen=10),
-            short_tracking_history=Deque([True, True, False, True], maxlen=4),
+            short_tracking_history=Deque([True, True, True, False], maxlen=4),
         )
     print(f'state_interval_judgment: {state_interval_judgment}')
     print(f'state_start_judgment: {state_start_judgment}')
